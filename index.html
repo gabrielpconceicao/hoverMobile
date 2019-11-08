@@ -1,0 +1,52 @@
+<html>
+
+	<head>
+		<title>
+			hoverMobile Library: Simulate the hover event in mobile
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- 
+			This library simulates the hover effect on mobile devices, width a cursor ( arrow ). By moving the arrow to the specified element, you can see the effect. 
+			@ Gabriel Conceição | gabriel_7340@hotmail.com | www.gabrielconceicao.com 
+		-->
+		<script src="hoverMobile.js"></script>
+	</head>
+
+	<body>
+		<img class="pointer" src="pointer.png">
+		<div class="log"></div>
+
+		<button class="pickme">pick me!</button>
+		<style>
+			body{
+				touch-action: none !important;
+				-moz-user-select: none !important;
+				-ms-user-select: none !important;
+				-o-user-select: none !important;
+				-webkit-user-select: none !important;
+				user-select: none !important;
+			}
+			.pointer{
+				width: 20px;
+				
+				position: absolute;
+				z-index: 999999999999999;
+			}
+			button:hover{
+				background-color: red;
+			}
+			button.hover{
+				background-color: red;
+			}
+			button{
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+
+		<script>
+				hoverMobile.start();
+		</script>
+	</body>
+</html>
