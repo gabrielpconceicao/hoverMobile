@@ -21,5 +21,18 @@ Example:
 		background-color: red;
 	}
 
+<b>Javascript:</b> With this library what is necessary to the mouseover event work on mobile devices?
+
+Simple define the touchenter and touchleave events at elements and the library will fire the events.
+
+Example:
+
+	$('button').on('mouseover touchenter', function(e) {
+		// make something cool on hover
+	});
+	
+	$('button').on('mouseleave touchleave', function(e) {
+		// make something cool on leave
+	});
 
 #In development process
