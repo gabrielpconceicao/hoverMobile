@@ -49,6 +49,7 @@ Example:
 	});
 
 
-
+See an example of the implementation:
+https://github.com/gabrielpconceicao/hoverMobile/blob/master/index.html#L33
 
 #In development process
