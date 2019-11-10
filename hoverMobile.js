@@ -23,14 +23,6 @@ var hoverMobile = hM = {
 	},
 
 	initDom: function(){
-		gO
-			.el( 'body' )
-			.setStl( 'touch-action', 'none !important' )
-			.setStl( '-moz-user-select', 'none !important' )
-			.setStl( '-ms-user-select', 'none !important' )
-			.setStl( '-o-user-select', 'none !important' )
-			.setStl( '-webkit-user-select', 'none !important' )
-			.setStl( 'user-select', 'none !important' );
 
 		hM.pointerEl = gO
 			.elCreate( 'img', 'pointer' )
@@ -46,8 +38,19 @@ var hoverMobile = hM = {
 			hM.lastFiredId = -1;
 		
 			setTimeout( function(){
+				gO
+					.el( 'body' )
+					.setStl( 'touch-action', 'none' )
+					.setStl( '-moz-user-select', 'none' )
+					.setStl( '-ms-user-select', 'none' )
+					.setStl( '-o-user-select', 'none' )
+					.setStl( '-webkit-user-select', 'none' )
+					.setStl( 'user-select', 'none' );
+
 				var tData = e.touches[0] || e.changedTouches[0];
 				hM.updatePointer( tData.pageX, tData.pageY );
+
+				hM.pointerEl.style.display = "block";
 			}, hM.opts.delayPointer );
 		});
 	},
@@ -94,10 +97,24 @@ var hoverMobile = hM = {
 	initTouchEnd: function(){
 		document.querySelector( 'body' ).addEventListener( 'touchend', function(e){
 			hM.lastFiredId = -1;
+
+			gO
+				.el( 'body' )
+				.setStl( 'touch-action', 'initial' )
+				.setStl( '-moz-user-select', 'initial' )
+				.setStl( '-ms-user-select', 'initial' )
+				.setStl( '-o-user-select', 'initial' )
+				.setStl( '-webkit-user-select', 'initial' )
+				.setStl( 'user-select', 'initial' );
+
 			window.touchcapable = false;
 			window.enableTouch = false;
-		//	hM.pointerEl.style.display = 'none';
-		});
+
+			if( hM.opts.hideAfterTouch )
+				setTimeout( function(){
+					hM.pointerEl.style.display = 'none';
+				}, hM.opts.delayPointer );
+		});	
 
 	},
 
