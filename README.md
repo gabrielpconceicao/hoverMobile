@@ -6,6 +6,8 @@ This javascript library simulates the hover effect on mobile devices, with a cur
 
 See the example on your mobile device at http://www.gabrielconceicao.com/hoverMobile
 
+![alt text](http://www.gabrielconceicao.com/hoverMobile/hoverMobile2.gif)
+
 <h4>The Concept</h4>
 
 When the user starts pressing lcd, he can move his finger to the element with some hover effect and see that effect, like at desktop.
