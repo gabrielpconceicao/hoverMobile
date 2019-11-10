@@ -1,5 +1,5 @@
 # hoverMobile : Javascript Library to simulate the hover effect in mobile devices
-This javascript library simulates the hover effect on mobile devices, with a cursor ( arrow ) or invisible. By moving the pointer to the specified element, you can see the effect.
+This javascript library simulates the hover effect on mobile devices, with a pointer or only by pressing and moving your finger on the lcd.
 
 ![alt text](http://www.gabrielconceicao.com/hoverMobile/hoverMobile.gif)
 
