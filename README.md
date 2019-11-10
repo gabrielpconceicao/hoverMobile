@@ -1,5 +1,5 @@
 # hoverMobile : Javascript Library to simulate the hover effect in mobile devices
-This javascript library simulates the hover effect on mobile devices, with a pointer or only by pressing and moving your finger on the lcd.
+This javascript library simulates the hover effect on mobile devices, with a pointer or only by moving your finger on the lcd.
 
 ![alt text](http://www.gabrielconceicao.com/hoverMobile/hoverMobile.gif)
 
