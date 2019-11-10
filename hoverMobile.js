@@ -5,9 +5,6 @@
 
 	This library simulates the hover effect on mobile devices, width a cursor ( arrow ). By moving the arrow to the specified element, you can see the effect.
 */
-
-/* -------  LIBRARY FUNCTIONS - Don't change anything after this unless you know what you are doing ;) ------------------------------------------------------ */
-
 var hoverMobile = hM = {
 	
 	start: function( opts ){
@@ -30,6 +27,7 @@ var hoverMobile = hM = {
 			.setStl( 'width', '20px' )
 			.setStl( 'position', 'absolute' )
 			.setStl( 'z-index', '999999999999999' )
+			.setStl( 'display', 'none' )
 			.show( gO.el( 'body' ) );
 	},
 
@@ -119,7 +117,7 @@ var hoverMobile = hM = {
 	},
 
 	updatePointer: function( x, y ){
-		hM.pointerEl.style.display = ( hM.opts.showPointer ? "block" : "none" );
+		//hM.pointerEl.style.display = ( hM.opts.showPointer ? "block" : "none" );
 		hM.pointerEl.style.left = x - ( hM.opts.showPointer ? hM.opts.pointerOffsetX : 0  ) + 'px';
 		hM.pointerEl.style.top = y - ( hM.opts.showPointer ? hM.opts.pointerOffsetY : 0  ) + 'px';
 	},
