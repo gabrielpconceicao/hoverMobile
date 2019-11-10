@@ -1,13 +1,24 @@
 # hoverMobile : Javascript Library to simulate the hover effect in mobile devices
-This javascript library simulates the hover effect on mobile devices, width a cursor ( arrow ). By moving the arrow to the specified element, you can see the effect.
-
+This javascript library simulates the hover effect on mobile devices, with a cursor ( arrow ) or invisible. By moving the pointer to the specified element, you can see the effect.
 
 ![alt text](http://www.gabrielconceicao.com/hoverMobile/hoverMobile.gif)
 
 
 See the example on your mobile device at http://www.gabrielconceicao.com/hoverMobile
 
-The :hover css pseudo class effect: How it works in mobile with this library?
+<h4>The Concept</h4>
+
+When the user starts pressing lcd, he can move his finger to the element with some hover effect and see that effect, like at desktop.
+<h5>The only three things necessary to work are:</h5>
+<ul>
+	<li>Add this library to your website;</li>
+	<li>Define a .hover class on every element with a :hover pseudo class and copy the same logic.</li>
+	<li>On your hover listeners, define the touchenter and touchleave events. </li>
+</ul>
+
+The library will fire the event touchenter when he is hover the element and fire touchleave when it leaves the element.
+
+<h5>The :hover css pseudo class effect: How it works in mobile with this library?</h5>
 Create the .hover class in your stylesheet file, to simulate the :hover effect. All you have to do is repeat the content of this pseudo class to the .hover class.
 Example:
 
@@ -34,5 +45,8 @@ Example:
 	$('button').on('mouseleave touchleave', function(e) {
 		// make something cool on leave
 	});
+
+
+
 
 #In development process
