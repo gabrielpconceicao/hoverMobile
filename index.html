@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html>
+
 	<head>
 		<title>
 			hoverMobile Library: Simulate the hover event in mobile
@@ -15,7 +15,8 @@
 	</head>
 
 	<body>
-		<button class="pickme">pick me!</button>
+		<p> Press the lcd screen to pick the button! </p>
+		<button> Pick me! </button>
 		<style>
 			button:hover{
 				background-color: red;
@@ -30,19 +31,19 @@
 		</style>
 
 		<script type="text/javascript">
-				gO.ready( function(){
-					hoverMobile.start({
-						pointerEl: '.pointer',	
-						hideAfterTouch: true,
-						showPointer: true,
-						pointerOffsetX: 20,
-						pointerOffsetY: 40,		
-						delayPointer: 200,			
-						fireHoverEvent: true,
-						applyHoverCssEffect: true,	
-						hoverClassName: 'hover',
-					});
+			gO.ready( function(){
+				hoverMobile.start({
+					pointerEl: '.pointer',	
+					hideAfterTouch: true,
+					showPointer: true,
+					pointerOffsetX: 20,
+					pointerOffsetY: 40,		
+					delayPointer: 200,			
+					fireHoverEvent: true,
+					applyHoverCssEffect: true,	
+					hoverClassName: 'hover',
 				});
+			});
 		</script>
 	</body>
 </html>
