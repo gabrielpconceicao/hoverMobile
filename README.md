@@ -1,4 +1,4 @@
-# hoverMobile : Javascript Library to simulate the hover effect in mobile devices
+# hoverMobile : Javascript Library to simulate the hover effect on a mobile device
 This javascript library simulates the hover effect on mobile devices, with a pointer or only by moving your finger on the lcd.
 
 Example 1             |  Example 2
@@ -48,7 +48,8 @@ Example:
 	});
 
 
-<h5> Options and initialization </h5>
+<h5> Options and 
+	itialization </h5>
 
 You can start this library, calling the start function with this parameters:
 
