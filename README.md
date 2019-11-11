@@ -1,16 +1,15 @@
 # hoverMobile : Javascript Library to simulate the hover effect in mobile devices
 This javascript library simulates the hover effect on mobile devices, with a pointer or only by moving your finger on the lcd.
 
-![alt text](http://www.gabrielconceicao.com/hoverMobile/hoverMobile.gif)
-
+Example 1             |  Example 2
+:-------------------------:|:-------------------------:
+![](http://www.gabrielconceicao.com/hoverMobile/hoverMobile.gif)  |  ![](http://www.gabrielconceicao.com/hoverMobile/hoverMobile2.gif)
 
 See the example on your mobile device at http://www.gabrielconceicao.com/hoverMobile
 
-![alt text](http://www.gabrielconceicao.com/hoverMobile/hoverMobile2.gif)
+<h1>How it works?</h1>
 
-<h4>The Concept</h4>
-
-When the user press the lcd three times very quickly, a pointer will show up and he can move his finger to the element with some hover effect and see that effect, like at desktop.
+When the user presses the lcd three times very quickly, a pointer will show up and he can move his finger to the element with some hover effect and see that effect, like at desktop.
 <h5>The only three things necessary to work are:</h5>
 <ul>
 	<li>Add this library to your website;</li>
