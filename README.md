@@ -48,8 +48,7 @@ Example:
 	});
 
 
-<h5> Options and 
-	itialization </h5>
+<h5> Options and intialization </h5>
 
 You can start this library, calling the start function with this parameters:
 
@@ -78,4 +77,5 @@ See an example of the implementation:
 https://github.com/gabrielpconceicao/hoverMobile/blob/master/index.html#L33
 
 This library depends of gO.library. For more information about this, see https://github.com/gabrielpconceicao/go-library
+
 #In development process
