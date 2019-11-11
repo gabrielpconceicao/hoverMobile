@@ -10,7 +10,7 @@ See the example on your mobile device at http://www.gabrielconceicao.com/hoverMo
 
 <h4>The Concept</h4>
 
-When the user starts pressing lcd, he can move his finger to the element with some hover effect and see that effect, like at desktop.
+When the user press the lcd three times very quickly, he can move his finger to the element with some hover effect and see that effect, like at desktop.
 <h5>The only three things necessary to work are:</h5>
 <ul>
 	<li>Add this library to your website;</li>
