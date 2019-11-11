@@ -33,7 +33,7 @@ var hoverMobile = hM = {
 			.setStl( 'display', 'none' )
 			.show( gO.el( 'body' ) );
 
-			hM.domEls = gO.el( 'body' ).el( hM.opts.animateEls + ' :not(.pointer):not(script):not(style)', true );
+			hM.domEls = gO.el( 'body' ).el( hM.opts.animateEls + ':not(.pointer):not(script):not(style)', true );
 
 		setInterval( function(){
 			if( !hM.touchEnabled && hM.touchCount != 2 )
