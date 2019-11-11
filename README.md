@@ -12,7 +12,7 @@ http://www.gabrielconceicao.com/
 
 <h1>How it works?</h1>
 
-When the user presses the lcd three times very quickly, a pointer will show up and he can move his finger to the element with some hover effect and see that effect, like at desktop. When he stops pressing the lcd, the pointer dissapears.
+When the user presses the lcd three times very quickly, a pointer will show up and he can move his finger to the element with some hover effect and see that effect, like at desktop. If the element has some javascript "on hover" code, it will run too, with a listener. When he stops pressing the lcd, the pointer dissapears.
 <h5>The only three things necessary to work are:</h5>
 <ul>
 	<li>Add this library to your website;</li>
