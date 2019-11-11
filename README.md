@@ -10,7 +10,7 @@ See the example on your mobile device at http://www.gabrielconceicao.com/hoverMo
 
 <h4>The Concept</h4>
 
-When the user press the lcd three times very quickly, he can move his finger to the element with some hover effect and see that effect, like at desktop.
+When the user press the lcd three times very quickly, a pointer will show up and he can move his finger to the element with some hover effect and see that effect, like at desktop.
 <h5>The only three things necessary to work are:</h5>
 <ul>
 	<li>Add this library to your website;</li>
@@ -49,7 +49,33 @@ Example:
 	});
 
 
+<h5> Options and initialization </h5>
+
+You can start this library, calling the start function with this parameters:
+
+
+		<script type="text/javascript">
+			gO.ready( function(){
+				hoverMobile.start({
+					pointerEl: '.pointer',	
+					animateEls: 'a,button,.more',	
+					hideAfterTouch: true,
+					showPointer: true,
+					pointerOffsetX: 20,
+					pointerOffsetY: 70,		
+					delayPointer: 200,			
+					fireHoverEvent: true,
+					applyHoverCssEffect: true,	
+					hoverClassName: 'hover',
+				});
+			});
+		</script>
+		
+The parameter "animateEls" defines what elements of the dom will show up the effect.
+
+
 See an example of the implementation:
 https://github.com/gabrielpconceicao/hoverMobile/blob/master/index.html#L33
 
+This library depends of gO.library. For more information about this, see https://github.com/gabrielpconceicao/go-library
 #In development process
