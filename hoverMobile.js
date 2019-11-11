@@ -53,7 +53,7 @@ var hoverMobile = hM = {
 
 	initTouchStart: function(){
 
-		window.addEventListener("scroll", function (event) {
+		window.document.querySelector("body").addEventListener("scroll", function (event) {
 			hM.touchCount = 0;
 		});
 		document.querySelector( 'body' ).addEventListener( 'touchstart', function(e){
