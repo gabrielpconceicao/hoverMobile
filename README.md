@@ -6,6 +6,9 @@ Example 1             |  Example 2
 ![](http://www.gabrielconceicao.com/hoverMobile/hoverMobile.gif)  |  ![](http://www.gabrielconceicao.com/hoverMobile/hoverMobile2.gif)
 
 See the example on your mobile device at http://www.gabrielconceicao.com/hoverMobile
+or
+verify this library working on my website:
+http://www.gabrielconceicao.com/
 
 <h1>How it works?</h1>
 
