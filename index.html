@@ -2,20 +2,21 @@
 
 	<head>
 		<title>
-			hoverMobile Library: Simulate the hover event in mobile
+			hoverMobile Library: Simulate the hover event on mobile devices
 		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- 
 			This library simulates the hover effect on mobile devices, width a cursor ( arrow ). By moving the arrow to the specified element, you can see the effect. 
-			@ Gabriel Conceição | gabriel_7340@hotmail.com | www.gabrielconceicao.com 
+			@ Gabriel Conceição | gabriel_7340@hotmail.com | www.gabrielconceicao.com
+			https://github.com/gabrielpconceicao/hoverMobile
 		-->
 		<script src="go.js"></script>
 		<script src="hoverMobile.js"></script>
 	</head>
 
 	<body>
-		<p> Press the lcd screen to pick the button! </p>
+		<p> Press the lcd screen three times to show the pointer and pick the button! </p>
 		<button> Pick me! </button>
 		<style>
 			button:hover{
@@ -34,10 +35,11 @@
 			gO.ready( function(){
 				hoverMobile.start({
 					pointerEl: '.pointer',	
+					animateEls: 'a,button,.more',	
 					hideAfterTouch: true,
 					showPointer: true,
 					pointerOffsetX: 20,
-					pointerOffsetY: 40,		
+					pointerOffsetY: 70,		
 					delayPointer: 200,			
 					fireHoverEvent: true,
 					applyHoverCssEffect: true,	
