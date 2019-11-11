@@ -116,18 +116,16 @@ var hoverMobile = hM = {
 							hM.domEls[i].fire( 'mouseover' );
 							hM.domEls[i].fire( 'touchenter' );
 							hM.lastFiredId = hM.domEls[i].elId;
-						}else{
-							hM.domEls[i].fire( 'leave' );
-							hM.domEls[i].fire( 'mouseleave' );
-							hM.domEls[i].fire( 'touchleave' );
 						}
-							
 						if( hM.opts.applyHoverCssEffect )
 							hM.domEls[i].classList.add( hM.opts.hoverClassName );
-	
+						
 					}else{
 						hM.domEls[i].classList.remove( hM.opts.hoverClassName );
 						hM.lastFiredId = -1;
+						hM.domEls[i].fire( 'leave' );
+						hM.domEls[i].fire( 'mouseleave' );
+						hM.domEls[i].fire( 'touchleave' );
 					}
 				}
 			}
