@@ -116,6 +116,7 @@ var hoverMobile = hM = {
 							hM.domEls[i].fire( 'mouseover' );
 							hM.domEls[i].fire( 'touchenter' );
 							hM.lastFiredId = hM.domEls[i].elId;
+							hM.lastFiredEl = hM.domEls[i];
 						}
 						if( hM.opts.applyHoverCssEffect )
 							hM.domEls[i].classList.add( hM.opts.hoverClassName );
@@ -151,6 +152,15 @@ var hoverMobile = hM = {
 			if( hM.opts.hideAfterTouch )
 				setTimeout( function(){
 					hM.pointerEl.style.display = 'none';
+
+					if( hM.lastFiredEl ){
+						hM.lastFiredEl.fire( 'leave' );
+						hM.lastFiredEl.fire( 'mouseleave' );
+						hM.lastFiredEl.fire( 'touchleave' );
+
+						if( hM.opts.applyHoverCssEffect )
+							hM.lastFiredEl.classList.remove( hM.opts.hoverClassName );
+					}
 				}, hM.opts.delayPointer );
 
 		});	
