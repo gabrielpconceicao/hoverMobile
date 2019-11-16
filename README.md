@@ -3,7 +3,7 @@ This javascript library simulates the hover effect on mobile devices, with a poi
 
 Example 1             |  Example 2
 :-------------------------:|:-------------------------:
-![](http://www.gabrielconceicao.com/hoverMobile/hoverMobile.gif)  |  ![](http://www.gabrielconceicao.com/hoverMobile/hoverMobile2.gif)
+![](https://raw.githubusercontent.com/gabrielpconceicao/hoverMobile/master/hoverMobile4.gif)  |  ![](http://www.gabrielconceicao.com/hoverMobile/hoverMobile2.gif)
 
 See the example on your mobile device at http://www.gabrielconceicao.com/hoverMobile
 or
