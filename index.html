@@ -15,12 +15,28 @@
 		-->
 		<script src="go.js"></script>
 		<script src="hoverMobile.js"></script>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 
 	<body>
-		<p> Press the lcd screen three times to show the pointer and catch the button! </p>
-		<button> Catch me! </button>
-		<p class="message"></p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4> hoverMobile.js <br> Javascript Library to simulate the hover effect on mobile devices </h4>
+					<p> Press the lcd screen three times to show the pointer and keep pressed to catch some button! </p>
+					<button type="button" class="btn btn-primary">Catch me</button>
+					<button type="button" class="btn btn-secondary">Catch me</button>
+					<button type="button" class="btn btn-success">Catch me</button>
+					<button type="button" class="btn btn-danger">Catch me</button>
+					<button type="button" class="btn btn-warning">Catch me</button>
+					<button type="button" class="btn btn-info">Catch me</button>
+					<button type="button" class="btn btn-light">Catch me</button>
+					<button type="button" class="btn btn-dark">Catch me</button>
+					<p class="message"></p>
+				</div>
+			</div>
+		</div>
 		<style>
 			html, body {
   				height: 100%;
@@ -55,8 +71,10 @@
 					hoverClassName: 'hover',
 				});
 
-				gO.el( 'button' ).on( 'touchenter', function(){
-					gO.el( '.message' ).val( 'You can see the effect without pressing the button.<br>This message has displayed with javascript event listeners!' );
+				gO.el( 'button', true ).forEach( function(id, el ){ 
+					this.on( 'touchenter', function(){
+						gO.el( '.message' ).val( 'You can see the effect without pressing the button.<br>This message has displayed with javascript event listeners!' );
+					});	
 				});
 				gO.el( 'button' ).on( 'touchleave', function(){
 					gO.el( '.message' ).val( '' );
