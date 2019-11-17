@@ -24,7 +24,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h4> hoverMobile.js <br> Javascript Library to simulate the hover effect on mobile devices </h4>
-					<p> Press the lcd screen three times to show the pointer and keep pressed to catch some button! </p>
+					<div class="message" style="height:100px">Press the lcd screen three times to show the pointer and keep pressed to catch some button!</div>
 					<button type="button" class="btn btn-primary">Catch me</button>
 					<button type="button" class="btn btn-secondary">Catch me</button>
 					<button type="button" class="btn btn-success">Catch me</button>
@@ -33,7 +33,6 @@
 					<button type="button" class="btn btn-info">Catch me</button>
 					<button type="button" class="btn btn-light">Catch me</button>
 					<button type="button" class="btn btn-dark">Catch me</button>
-					<p class="message"></p>
 				</div>
 			</div>
 		</div>
@@ -71,13 +70,13 @@
 					hoverClassName: 'hover',
 				});
 
-				gO.el( 'button', true ).forEach( function(id, el ){ 
-					this.on( 'touchenter', function(){
-						gO.el( '.message' ).val( 'You can see the effect without pressing the button.<br>This message has displayed with javascript event listeners!' );
+				gO.el( 'button', true ).forEach( function(el, id ){ 
+					el.on( 'touchenter', function(){
+						gO.el( '.message' ).val( 'You can see the effect without pressing the button. This message has displayed with javascript event listeners!' );
 					});
 
-					this.on( 'touchleave', function(){
-						gO.el( '.message' ).val( '' );
+					el.on( 'touchleave', function(){
+						gO.el( '.message' ).val( 'Press the lcd screen three times to show the pointer and keep pressed to catch some button!' );
 					});
 				});
 			});
