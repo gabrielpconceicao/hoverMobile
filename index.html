@@ -74,10 +74,11 @@
 				gO.el( 'button', true ).forEach( function(id, el ){ 
 					this.on( 'touchenter', function(){
 						gO.el( '.message' ).val( 'You can see the effect without pressing the button.<br>This message has displayed with javascript event listeners!' );
-					});	
-				});
-				gO.el( 'button' ).on( 'touchleave', function(){
-					gO.el( '.message' ).val( '' );
+					});
+
+					this.on( 'touchleave', function(){
+						gO.el( '.message' ).val( '' );
+					});
 				});
 			});
 		</script>
