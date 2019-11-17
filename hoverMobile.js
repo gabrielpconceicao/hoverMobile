@@ -115,6 +115,7 @@ var hoverMobile = hM = {
 							hM.domEls[i].fire( 'hover' );
 							hM.domEls[i].fire( 'mouseover' );
 							hM.domEls[i].fire( 'touchenter' );
+							hM.domEls[i]._hMEFired = true;
 							hM.lastFiredId = hM.domEls[i].elId;
 							hM.lastFiredEl = hM.domEls[i];
 						}
@@ -122,11 +123,14 @@ var hoverMobile = hM = {
 							hM.domEls[i].classList.add( hM.opts.hoverClassName );
 						
 					}else{
-						hM.domEls[i].classList.remove( hM.opts.hoverClassName );
-						hM.lastFiredId = -1;
-						hM.domEls[i].fire( 'leave' );
-						hM.domEls[i].fire( 'mouseleave' );
-						hM.domEls[i].fire( 'touchleave' );
+						if( hM.domEls[i]._hMEFired ){
+							hM.domEls[i].classList.remove( hM.opts.hoverClassName );
+							hM.lastFiredId = -1;
+							hM.domEls[i].fire( 'leave' );
+							hM.domEls[i].fire( 'mouseleave' );
+							hM.domEls[i].fire( 'touchleave' );
+							hM.domEls[i]._hMEFired = false;
+						}
 					}
 				}
 			}
